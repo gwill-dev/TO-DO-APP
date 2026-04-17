@@ -18,7 +18,7 @@ A simple and interactive To-Do List web application built using HTML, CSS, and J
 - script.js
 
 ## 🌐 Live Demo
-(You can add this later using GitHub Pages)
+https://gwill-dev.github.io/TO-DO-APP/
 
 ## 📌 Author
 Amadi Uchechukwu Godswill
