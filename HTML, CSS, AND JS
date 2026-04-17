@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"><h1>To-DO-LIST</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskLst"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>function addTask() {
+    let input = document.getElementById.getElementById("taskInput");
+    let task = input.value;
+
+    if (task === ""){
+    alert("Please enter a task.");
+    return
+    }
+    let li = document.createElement("li");
+    li.textContent = task;
+
+    li.onclick = function() {
+        this.style.textDecoration = "line-through";
+    };
+
+    document.getElementById("taskList").appendChild(li);
+    input.value = "";
+    }body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+.container {
+    background: white;
+    width: 300px;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+input{
+    padding: 10px;
+    width: 70%;
+}
+button{
+    padding: 10px;
+}
+li {
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+</html>
